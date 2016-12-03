@@ -1,0 +1,117 @@
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+    max-width: 1260px;
+    min-width: 800px;
+    margin: 0 auto;
+    background-color: #8BFF77;
+}
+
+header {
+    height: 150px;
+    clear: left;
+    text-align: center;
+    background-image: url("../img/logo.jpg");
+    background-repeat: no-repeat;
+    background-color: green;
+    background-size: contain;
+    background-position-x: 129px;
+}
+
+nav {
+    width: 170px;
+    float: left;
+    margin: 0;
+    background-color: #8BFF77;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 8px 8px 8px 10px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    list-style-type: none;
+    background-color: #6BEF67;
+}
+
+nav li:hover, nav li.active {
+    background-color: #4BDF37;
+}
+
+nav embed {
+    width: 100%;
+    margin-top: 1em;
+}
+
+.content {
+    margin-left: 170px;
+    min-height: 478px;
+    padding: 1em;
+    overflow: auto;
+    color: white;
+    text-align: center;
+    background-color: #99CC00;
+    color: #0066FF;
+}
+
+.photos div {
+    float: left;
+    border: 1px solid black;
+    margin: 10px;
+    width: 330px;
+    height: 280px;
+    color: black;
+}
+
+.photos a img {
+    width: 100%;
+}
+
+.photos a img:hover {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.photos img.flip {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: "FlipH";
+    -ms-filter: "FlipH";
+}
+
+.photos span {
+    position: relative;
+    bottom: -5px;
+}
+
+article {
+    border: 1px solid green;
+    text-align: left;
+    margin-bottom: 1em;
+    min-height: 240px;
+}
+
+article img {
+    width: 300px;
+    float: right;
+    padding: 1em;
+}
+
+article p {
+    margin: 0.5em
+}
