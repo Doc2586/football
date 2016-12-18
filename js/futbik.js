@@ -29,7 +29,7 @@ function changePosition(position) {
 
 	// Make async call to get additional content
 	$.ajax({
-		url: "../content/" + position + ".html",
+		url: "content/" + position + ".html",
 		context: document.body,
 		success: function (response) {
 
