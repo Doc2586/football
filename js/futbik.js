@@ -22,6 +22,16 @@ $(function () {
 			location.hash = '#' + newPosition;
 		}
 	});
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 1) {
+			$('nav').addClass("sticky");
+		}
+		else {
+			$('nav').removeClass("sticky");
+		}
+	});
+
 });
 
 // Load content of the site from another html file based on it's name
@@ -40,6 +50,8 @@ function changePosition(position) {
 			$('.scroll-top').click(function () {
 				contentScrollTop();
 			});
+
+			contentScrollTop();
 		}
 	});
 }

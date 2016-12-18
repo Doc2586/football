@@ -24,14 +24,21 @@ header {
     background-repeat: no-repeat;
     background-color: green;
     background-size: contain;
-    background-position-x: 129px;
+    background-position-x: 200px;
+}
+
+.sticky {
+    top: 0;
 }
 
 nav {
-    width: 170px;
-    float: left;
     margin: 0;
     background-color: #8BFF77;
+    position: fixed;
+    top: 157px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    width: 1260px;
 }
 
 nav ul {
@@ -45,10 +52,14 @@ nav li {
     cursor: pointer;
     list-style-type: none;
     background-color: #6BEF67;
+    float: left;
+    display: inline;
+    margin-right: 3px;
 }
 
 nav li:hover, nav li.active {
     background-color: #4BDF37;
+
 }
 
 nav embed {
@@ -57,7 +68,6 @@ nav embed {
 }
 
 .content {
-    margin-left: 170px;
     min-height: 478px;
     padding: 1em;
     overflow: auto;
@@ -65,6 +75,7 @@ nav embed {
     text-align: center;
     background-color: #99CC00;
     color: #0066FF;
+    margin-top: 36px;
 }
 
 .photos div {
@@ -120,10 +131,10 @@ article p {
     border-radius: 50%;
     background: #fff url(../img/ios_clock.svg) no-repeat center;
     background-size: 88%;
-    height: 10em;
+    height: 8em;
     padding-bottom: 0;
     position: relative;
-    width: 10em;
+    width: 8em;
     margin-left: 5px;
     margin-top: 5px;
 }
