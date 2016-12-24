@@ -20,11 +20,11 @@ header {
     height: 150px;
     clear: left;
     text-align: center;
-    background-image: url("../img/logo.jpg");
+    background-image: url("../img/logo2.jpg");
     background-repeat: no-repeat;
-    background-color: green;
+    background-color: #a2fed8;
     background-size: contain;
-    background-position-x: 200px;
+    background-position-x: 50px;
 }
 
 .sticky {
