@@ -20,11 +20,16 @@ header {
     height: 150px;
     clear: left;
     text-align: center;
-    background-image: url("../img/logo2.jpg");
-    background-repeat: no-repeat;
-    background-color: #a2fed8;
-    background-size: contain;
-    background-position-x: 50px;
+    background: #a2fed8; /* Для старых браузров */
+    background: linear-gradient(to top, #fefcea, #a2fed8);
+    padding: 10px;
+}
+
+header span {
+    font-size: 60px;
+    position: absolute;
+    top: 40px;
+    margin-left: -150px;
 }
 
 .sticky {
@@ -75,7 +80,7 @@ nav embed {
     text-align: center;
     background-color: #99CC00;
     color: #0066FF;
-    margin-top: 36px;
+    margin-top: 20px;
 }
 
 .photos div {
